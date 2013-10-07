@@ -1,0 +1,391 @@
+/* Body and structure
+-------------------------------------------------- */
+
+body {
+	position: relative;
+}
+
+/* Code in headings */
+h3 code {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+
+body > .navbar {
+	font-size: 13px;
+}
+
+/* Change the docs' brand */
+
+
+/* Sections
+-------------------------------------------------- */
+
+/* padding for in-page bookmarks and fixed navbar */
+section {
+	padding-top: 30px;
+}
+section > .page-header,
+section > .lead {
+	color: #5a5a5a;
+}
+section > ul li {
+	margin-bottom: 5px;
+}
+
+/* Separators (hr) */
+.bs-docs-separator {
+	margin: 40px 0 39px;
+}
+
+/* Faded out hr */
+hr.soften {
+	height: 1px;
+	margin: 70px 0;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+}
+
+
+
+/* Jumbotrons
+-------------------------------------------------- */
+
+/* Base class
+------------------------- */
+.jumbotron {
+	position: relative;
+	padding: 40px 0;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+	background: rgba(16,16,128,0.95); /* Solid Colour */
+
+	/* ----- Gradient on Jumbotron ----- */ 
+	/*background: "#101080"; /* Old browsers */
+	/*background: -moz-linear-gradient(45deg,  #101080  0%, #33356D 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#101080 ), color-stop(100%,#33356D)); /* Chrome,Safari4+ */
+	/*background: -webkit-linear-gradient(45deg,  #101080  0%,#33356D 100%); /* Chrome10+,Safari5.1+ */
+	/*background: -o-linear-gradient(45deg,  #101080  0%,#33356D 100%); /* Opera 11.10+ */
+	/*background: -ms-linear-gradient(45deg,  #101080  0%,#33356D 100%); /* IE10+ */
+	/*background: linear-gradient(45deg,  #101080  0%,#33356D 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#101080', endColorstr='#33356D',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/*-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+		 -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);*/			
+}
+.jumbotron h1 {
+	font-size: 80px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+}
+.jumbotron p {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+/* Link styles (used on .masthead-links as well) */
+.jumbotron a {
+	color: #fff;
+	color: rgba(255,255,255,.5);
+	-webkit-transition: all .2s ease-in-out;
+		 -moz-transition: all .2s ease-in-out;
+					transition: all .2s ease-in-out;
+}
+.jumbotron a:hover {
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+.masthead .btn {
+	padding: 14px 24px;
+	font-size: 24px;
+	font-weight: 200;
+	color: #fff; /* redeclare to override the `.jumbotron a` */
+	border: 0;
+	-webkit-border-radius: 6px;
+		 -moz-border-radius: 6px;
+					border-radius: 6px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
+		 -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
+					box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.01);
+	-webkit-animation-name: downloadButton;
+		 -moz-animation-name: downloadButton;
+	-webkit-animation-duration: 1.5s;
+		 -moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+		 -moz-animation-iteration-count: infinite;
+	-webkit-transition: none;
+		 -moz-transition: none;
+					transition: none;
+
+}
+.masthead .btn:active {
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+		 -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+					box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+}
+
+
+/* Pattern overlay
+------------------------- */
+.jumbotron .container {
+	position: relative;
+	z-index: 2;
+}
+.jumbotron:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+	opacity: .04;
+}
+
+/* Masthead (docs home)
+------------------------- */
+.masthead {
+	padding: 50px 0 50px;
+	margin-bottom: 0;
+	color: #fff;
+}
+.masthead h1 {
+	font-size: 120px;
+	line-height: 1;
+	letter-spacing: -2px;
+}
+.masthead p {
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 1.25;
+}
+
+/* Textual links in masthead */
+.masthead-links {
+	margin: 0;
+	list-style: none;
+}
+.masthead-links li {
+	display: inline;
+	padding: 0 10px;
+	color: rgba(255,255,255,.25);
+}
+
+/* Subhead (other pages)
+------------------------- */
+.subhead {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+.subhead h1 {
+	font-size: 60px;
+}
+.subhead p {
+	margin-bottom: 20px;
+}
+.subhead .navbar {
+	display: none;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+	.bs-docs-container {
+		max-width: 970px;
+	}
+	.bs-docs-sidenav {
+		width: 258px;
+	}
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+	/* Unfloat brand */
+
+	/* Inline-block quick links for more spacing */
+	.quick-links li {
+		display: inline-block;
+		margin: 5px;
+	}
+
+	/* When affixed, space properly */
+	.bs-docs-sidenav {
+		top: 0;
+		margin-top: 30px;
+		margin-right: 0;
+	}
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+	/* Remove any padding from the body */
+	body {
+		padding-top: 0;
+	}
+	/* Widen masthead and social buttons to fill body padding */
+	.jumbotron {
+		margin-top: -20px; /* Offset bottom margin on .navbar */
+	}
+	/* Adjust sidenav width */
+	.bs-docs-sidenav {
+		width: 166px;
+		margin-top: 20px;
+	}
+	.bs-docs-sidenav.affix {
+		top: 0;
+	}
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 768px) {
+	/* Remove any padding from the body */
+	body {
+		padding-top: 0;
+	}
+
+	/* Widen masthead and social buttons to fill body padding */
+	.jumbotron {
+		padding: 40px 20px;
+		margin-top:   -20px; /* Offset bottom margin on .navbar */
+		margin-right: -20px;
+		margin-left:  -20px;
+	}
+	.masthead h1 {
+		font-size: 90px;
+	}
+	.masthead p,
+	.masthead .btn {
+		font-size: 24px;
+	}
+	.marketing .span4 {
+		margin-bottom: 40px;
+	}
+	.bs-docs-social {
+		margin: 0 -20px;
+	}
+
+	/* Space out the show-grid examples */
+	.show-grid [class*="span"] {
+		margin-bottom: 5px;
+	}
+
+	/* Sidenav */
+	.bs-docs-sidenav {
+		width: auto;
+		margin-bottom: 20px;
+	}
+	.bs-docs-sidenav.affix {
+		position: static;
+		width: auto;
+		top: 0;
+	}
+
+	/* Unfloat the back to top link in footer */
+	.footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer p {
+		margin-bottom: 9px;
+	}
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+	/* Remove padding above jumbotron */
+	body {
+		padding-top: 0;
+	}
+
+	/* Change up some type stuff */
+	h2 small {
+		display: block;
+	}
+
+	/* Downsize the jumbotrons */
+	.jumbotron h1 {
+		font-size: 60px;
+	}
+	.jumbotron p,
+	.jumbotron .btn {
+		font-size: 20px;
+	}
+	.jumbotron .btn {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* center align subhead text like the masthead */
+	.subhead h1,
+	.subhead p {
+		text-align: center;
+	}
+
+	/* Marketing on home */
+	.marketing h1 {
+		font-size: 40px;
+	}
+
+	/* center example sites */
+	.example-sites {
+		margin-left: 0;
+	}
+	.example-sites > li {
+		float: none;
+		display: block;
+		max-width: 280px;
+		margin: 0 auto 18px;
+		text-align: center;
+	}
+	.example-sites .thumbnail > img {
+		max-width: 270px;
+	}
+
+	/* Do our best to make tables work in narrow viewports */
+	table code {
+		white-space: normal;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+
+	/* Modal example */
+	.modal-example .modal {
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+	}
+
+	/* Unfloat the back to top in footer to prevent odd text wrapping */
+	.footer .pull-right {
+		float: none;
+	}
+}
+
+.inline-display {
+	display:inline-block;
+}
