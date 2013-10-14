@@ -17,6 +17,13 @@
 		<!-- <![endif]-->
 
 		<script src="lib/js/bootstrap.js"></script>
+
+		<style>
+			#home-carousel{
+				margin-top: -20px;
+				margin-bottom: 20px
+			}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse" role="navigation">
@@ -50,6 +57,44 @@
 				</div>
 			</div>
 		</nav>
+
+		<div id="home-carousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#home-carousel" data-slide-to="1"></li>
+				<li data-target="#home-carousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="http://placehold.it/1280x300">
+					<div class="carousel-caption">
+						A Caption
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://placehold.it/1280x300">
+					<div class="carousel-caption">
+						A Caption 2
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://placehold.it/1280x300">
+					<div class="carousel-caption">
+						A Caption 3
+					</div>
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#home-carousel" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" href="#home-carousel" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+		</div>
 
 		<div class="container">
 			<div class="row">
